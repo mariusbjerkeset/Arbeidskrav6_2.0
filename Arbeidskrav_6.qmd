@@ -3,18 +3,19 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
+# Et moderat treningsvolum gir mer muskelhypertrofi og større økning i maksimal styrke sammenlignet med et lavt treningsvolum
 
-## Introduction
+## Introduksjon
 Maksimal styrke avhenger hovedsakelig av muskelmasse (Heaselgrave et al., 2019). Det er en rekke faktorer man kan manipulere når man skal øke muskelmasse og muskelstyrke. Hva som er optimal fordeling av treningsvolum, -frekvens og -motstand kan variere fra person til person, på grunn av varierende genetikk (Ratamess, 2009; Timmons, 2011). Treningsvolum defineres som antall ukentlige sett per muskelgruppe (Figueiredo et al., 2018). Et spesifikt område innenfor styrketrening som har fått mye oppmerksomhet er treningsvolum. Det er flere studier som har vist at et lavt treningsvolum kan gi samme nevrologiske og fysiologiske adaptasjoner som moderat treningsmengde (Cannon & Marino, 2010; Mitchell et al., 2013). En viktig påpekning her er at dette er utrente personer, som trolig har et lavere krav til stimuli for å oppnå adaptasjoner. For et individ som er bedre trent vil man trolig se større forskjeller (Raastad, 2010). 
 Det er liten tvil om at styrketrening er helsefremmende, men en stor årsak til at folk ikke starter med regelmessig styrketrening er at de ikke har tid. Det kan derfor være gunstig å se på hvor lavt treningsvolum man trenger for å indusere positive adaptasjoner i muskelmasse og maksimal styrke. Tidligere studier har vist at økning i frekvens ikke vil føre til større adaptasjoner (Colquhoun et al., 2018). Det er også studier som har vist det ikke er noen forskjell på trening med ett og tre sett per øvelse (Starkey et al., 1996). Studien til Starkey (1996) gjennomførte øvelsene bilateralt, dette medfører at det kan være individuelle epigenetiske forskjeller som kan påvirke resultatene. Det vil derfor være interessant å se hvordan resultatene blir hvis hver enkelt forsøksperson gjennomfører både ett og tre sett per øvelse, men da følge en protokoll på hvert bein. 
 Hensikten med denne studien var derfor å undersøke forskjeller mellom ett og tre sett per øvelse på økning på muskelhypertrofi og maksimal styrke på underekstremitetene. Dette skal sammenlignes med et innen-deltaker-design. Dette vil ekskludere eventuelle epigenetiske forskjeller mellom forsøkspersonene. Basert på de tidligere studiene (Cannon & Marino, 2010; Mitchell et al., 2013) er vår hypotese at det ikke vil være noen forskjell mellom beinene.
 
-## Methods
+## Metode
 
 ### Deltakere
 22 kvinner og 19 menn ble rekruttert til studien. Inkluderingskriteriene var at de ikke skulle røyke og de måtte være mellom 18 og 40 år. De ble ekskludert hvis de hadde trent mer enn én styrketreningsøkt de siste 12 månedene. De ville også bli ekskludert dersom de var allergiske mot lokal bedøvelse, hadde noen skader som ville påvirke treningen eller tok medisiner som ville forhindre adaptasjoner til trening. Under databehandlingen ble syv forsøkspersoner ekskludert fra datasettet. Årsaken til ekskluderingen var at de hadde gjennomført < 85% av treningsøktene de fikk utskrevet. Samtlige forsøkspersoner hadde erfaring med sport/lagidrett. 20 av forsøkspersonene informerte om at de drev med fysiskaktivitet da de ble rekruttert, men ingen av de trente mer enn én gang ukentlig. 
 
-Intervensjonen varte i 12 uker og inneholdt helkropps styrketrening (alle deltakerne startet forsøket i perioden september-november). Beinøvelser ble utført unilateralt for å tillate individuelle forskjeller i treningsstimuli. Beinene til forsøkspersonene ble vilkårlig plassert i enten styrketrening med 1 eller 3 sett per øvelse, med andre ord fullførte samtlige forsøkspersoner både ett og 3 sett med styrketrening. Muskelstyrken ble vurdert før start av intervensjonen, underveis (uke 3, 5 og 9) og etter treningsintervensjonen. Kroppssammensetning ble kun målt før og etter treningsintervensjonen.
+Intervensjonen varte i 12 uker og inneholdt helkropps styrketrening (alle deltakerne startet forsøket i perioden september-november). Beinøvelser ble utført unilateralt for å tillate individuelle forskjeller i treningsstimuli. Beinene til forsøkspersonene ble vilkårlig plassert i enten styrketrening med 1 eller 3 sett per øvelse, med andre ord fullførte samtlige forsøkspersoner både ett og 3 sett med styrketrening. Muskelstyrken ble vurdert før start av intervensjonen, underveis (uke 3, 5 og 9) og etter treningsintervensjonen. Kroppssammensetning ble kun målt før og etter treningsintervensjonen. Deltakernes karakteristikker er presentert i tabell 1.
 ```{r}
 #| label: "laste ned datapakker"
 #| warning: false
@@ -31,7 +32,7 @@ library(ggplot2)
 library(forcats)
 ```
 
-
+#### Tabell 1: Deltakernes karakteristikker ved oppstart (N = 41) 
 ```{r}
 #| label: "descriptives"
 #| warning: false
@@ -53,6 +54,7 @@ dxadata %>%
   knitr::kable()
 
 ```
+###### Notat: Data er presentert som gjennomsnitt (standardavvik). N = antall; Avg = gjennomsnitt; excl: eksludert; incl: inkludert
 
 ### Styrketreningsprotokoll
 Før hver treningsøkt gjennomførte deltakerne en standardisert oppvarming bestående av 5 minutters ergometersykling (oppfattet anstrengelse: Borg 12–14), etterfulgt av 10 repetisjoner av kroppsvektsøvelser (push-ups med individuelt tilpasset vanskelighetsgrad, sit-ups, rygghev og knebøy), og én serie med 10 repetisjoner ved omtrent 50% av en maksimal repetisjon (1RM) for hver styrkeøvelse. Beinøvelser ble utført i følgende rekkefølge: ensidig beinpress, leg curl og knekestensjon. Øvelsene ble utført som enten én serie eller tre serier per øvelse. Enkeltsettene ble gjennomført mellom det andre og tredje settet. Etter beinøvelsene gjennomførte deltakerne to sett av bilateral benkpress, nedtrekk og enten skulderpress eller sittende roing (gjennomført i annenhver økt). Pauser mellom settene var på 90–180 sekunder. Treningsintensiteten var progressiv gjennom treningsintervensjonen. Forsøkspersonene startet med en 10-repetisjonsmakimumstest (10RM) de første 2 ukene, etterfulgt av 8RM i 3 uker og 7RM i 7 uker. Noen av øktene ble gjennomført uten tilsyn, da det tidvis passet bedre med forsøkspersonenes daglige rutine. Forsøkspersonene ble fulgt opp på 91% (Standardavvik = 10%) av de gjennomførte treningsøktene. Forsøkspersonene ble bedt om å føre treningsdagbok når de ikke ble fulgt opp under treningsøkter. Disse ble kontinuerlig sjekket av forskningsteamet sammen med deltakerne for å sikre progresjon og overholdelse av protokollen. Fra den niende treningsøkten hadde hver uke én økt med redusert belastning, tilsvarende 90% av forrige økt med samme antall repetisjoner. Treningsøkter med maksimal innsats ble separert med minst 48 timers mellomrom. Treningsøkter med submaksimal innsats (90%) ble separert fra andre økter med minst 24 timer. For å bidra til umiddelbar restitusjon, ble det gitt en standardisert væske etter hver økt. Denne inneholdt 0,15 g kg−1 protein, 1,2 g kg−1 karbohydrater and 0,5 g kg−1 fett.
@@ -61,13 +63,13 @@ Før hver treningsøkt gjennomførte deltakerne en standardisert oppvarming best
 Maksimal styrke ble vurdert som en repetisjon maksimum (1RM) i ensidig beinpress. Testprotokollen for øvelsen startet med en spesifikk oppvarming som bestod av 10, 6 og 3 repetisjoner ved henholdsvis 50%, 75% og 85% av forventet 1RM. Deretter ble 1RM funnet ved å øke motstanden gradvis til forsøkspersonen ikke klarte å gjennomføre hele bevegelsesbanen. Deltakerne ble bedt om å skyve med maksimal innsats. For hver øvelse ble den tyngste belastningen som ble løftet, definert som 1RM. Hver forsøksperson fikk fire til seks forsøk. Ved starten av prosjektet ble 1RM vurdert to ganger, med minst 4 dagers mellomrom. Den høyeste verdien oppnådd ble brukt til analyser. Styrketestene ble utført med minst 48 timers mellomrom fra treningsøktene.
 
 ### Kroppssammensetning
-Kroppssammensetningen ble bestemt før og etter intervensjonen ved hjelp av dual-energy X-ray absorptiometry (DXA) (Lunar Prodigy, GE Healthcare, Oslo, Norge), i samsvar med standard protokoll. Før DXA-målingene ble deltakerne bedt om å være fastende i 2 timer og å avstå fra tung fysisk aktivitet i minimum 48 timer. To dager skilte den siste styrketesten fra målingene av kroppssammensetning.
+Kroppssammensetningen ble bestemt før og etter intervensjonen ved hjelp av dual-energy X-ray absorptiometry (DXA) (Lunar Prodigy, GE Healthcare, Oslo, Norge), i samsvar med standard protokoll. Før DXA-målingene ble deltakerne bedt om å være fastende i 2 timer og avstå fra tung fysisk aktivitet i minimum 48 timer. To dager skilte den siste styrketesten fra målingene av kroppssammensetning.
 
 ### Statistiske analyser
 All deskriptiv data er presenteres som gjennomsnitt ± standardavvik (SD). For å undersøke effekten av lavt versus moderat settvolum på muskelhypertrofi og maksimal styrke, ble det utført en lineær regresjonsanalyse. Resultatene ble presenterte som estimat, standardfeil (SE) t-verdi, konfidensintervall (KI) og p-verdi. Nivået av statistisk signifikans ble satt til < 0,05. Alle dataanalysene ble gjort i R (R Core Team, 2022).
 
-## Results
-Totalt førte treningsintervensjonen til en økning på 193 gram (2,25%) i mager masse og 92,31 (55,4%) kg økning i 1RM beinpress. Gruppen som gjennomførte 3 sett per øvelse hadde en 123 (73,9%) gram større økning i magermasse sammenlignet med gruppen som trente 1 sett (SE = 56,1, t = 2,19, 95% konfidensintervall [KI]: 8,6 –¬¬ 237,0, p = 0,0359). Gruppen som trente med 3 sett per øvelse hadde 7,8 kg (12,5%) større økning enn gruppen med 1 sett (SE = 3,31, t = 2,36, 95% KI: 1,1 –¬¬ 14,6, p = 0,025)
+## Resultater
+Totalt førte treningsintervensjonen til en økning på 193 gram (2,25%) i mager masse og 92,31 (55,4%) kg økning i 1RM beinpress. Gruppen som gjennomførte 3 sett per øvelse hadde en 123 (73,9%) gram større økning i magermasse sammenlignet med gruppen som trente 1 sett (SE = 56,1, t = 2,19, 95%  KI: 8,6 – 237,0, p = 0,0359, figur 1). Gruppen som trente med 3 sett per øvelse hadde 7,8 kg (12,5%) større økning enn gruppen med 1 sett (SE = 3,31, t = 2,36, 95% KI: 1,1 – 14,6, p = 0,025, figur 2)
 
 ```{r}
 #| label: "Load packages and dataa"
@@ -137,15 +139,14 @@ leanmass %>%
   facet_wrap(~ sets, scales = "free") +
   theme_minimal() +
   labs(
-    title = "Gjennomsnittlig mager masse",
+    title = "Mager masse",
     x = "Tidspunkt",
     y = "Antall gram"
   ) +
   theme(legend.position = "top")
 
 ```
-
-
+##### Figur 1: Endringer i fettfri masse ved lavt versus moderat settvolum i løpet av en styrketreningsintervensjon på 12 uker (N = 34). Notat: Stipplet linje = gjennomsnittlig respons; sammenhengende linje = individuelle responser.
 
 
 ```{r}
@@ -274,8 +275,35 @@ str_beinpress %>%
        y = "Antall kg")
 
 ```
+##### Figur 2: Endringer i 1RM beinpress ved lavt versus moderat treningsvolum (N = 34). Notat: Diagonale linjer = gjennomsnittlig endring; vertikale linjer = minimums- - maksimumsverdi. 
+
+## Diskusjon
+Denne studien viser at et større treningsvolum gir større prestasjonsforbedring i 1RM beinpress. Dette samsvarer med tidligere meta-analyser som har vist at moderate treningsvolum gir større adaptasjoner enn lavt volum (Krieger, 2009; Rhea et al., 2002). Dette kan skyldes at et høyere treningsvolum gir økt fosforylering av p70 og S6, som igjen vil gi mer hypertrofi (Terzis et al., 2010). Det er tidligere vist en sterk korrelasjon mellom muskelmasse og muskelstyrke (Almiray-Soto et al., 2022). På den andre siden kan en stor bidragsyter til økt muskelstyrke være nevrologiske tilpasninger (Moritani & deVries, 1979). 
+
+Studien viste en større økning i muskelmasse på det beinet forsøkspersonene trente 3 sett per øvelse. Det samme er vist i tidligere studier som har sett på lavt versus moderat treningsvolum (Rønnestad et al., 2007). Studien til Rønnestad hadde det samme totale treningsvolumet per økt, men hadde variert volum på forskjellige muskelgrupper. En potensiell forklaring på endringen i muskelhypertrofi kan være intracellulære adaptasjoner igjennom blant annet fosforylering av p70 (Terzis et al., 2010). 
+
+## Konklusjon
+Denne studien demonstrerer at moderat treningsvolum gir større økning i maksimal muskelstyrke i beinpress og gir mer hypertrofi enn lavt volum. 
 
 
-## Discussion
+##### PS: Jeg skal ordne kildene i en egen bibfil, men fikk det ikke til innen tidsfristen. 
 
-## Conclusion
+### Referanser
+Almiray-Soto, A. L., Denova-Gutiérrez, E., Lopez-Gonzalez, D., Medeiros, M., & Clark, P. (2022). Muscle Strength Reference Values and Correlation with Appendicular Muscle Mass in Mexican Children and Adolescents. Calcified Tissue International, 111(6), 597–610. https://doi.org/10.1007/s00223-022-01025-4
+Cannon, J., & Marino, F. E. (2010). Early-phase neuromuscular adaptations to high- and low-volume resistance training in untrained young and older women. Journal of Sports Sciences, 28(14), 1505–1514. https://doi.org/10.1080/02640414.2010.517544
+Colquhoun, R. J., Gai, C. M., Aguilar, D., Bove, D., Dolan, J., Vargas, A., Couvillion, K., Jenkins, N. D. M., & Campbell, B. I. (2018). Training Volume, Not Frequency, Indicative of Maximal Strength Adaptations to Resistance Training. Journal of Strength and Conditioning Research, 32(5), 1207–1213. https://doi.org/10.1519/JSC.0000000000002414
+Figueiredo, V. C., De Salles, B. F., & Trajano, G. S. (2018). Volume for Muscle Hypertrophy and Health Outcomes: The Most Effective Variable in Resistance Training. Sports Medicine, 48(3), 499–505. https://doi.org/10.1007/s40279-017-0793-0
+Heaselgrave, S. R., Blacker, J., Smeuninx, B., McKendry, J., & Breen, L. (2019). Dose-Response Relationship of Weekly Resistance-Training Volume and Frequency on Muscular Adaptations in Trained Men. International Journal of Sports Physiology and Performance, 14(3), 360–368. https://doi.org/10.1123/ijspp.2018-0427
+Krieger, J. W. (2009). Single Versus Multiple Sets of Resistance Exercise: A Meta-Regression. Journal of Strength and Conditioning Research, 23(6), 1890–1901. https://doi.org/10.1519/JSC.0b013e3181b370be
+Mitchell, C. J., Churchward-Venne, T. A., Bellamy, L., Parise, G., Baker, S. K., & Phillips, S. M. (2013). Muscular and Systemic Correlates of Resistance Training-Induced Muscle Hypertrophy. PLoS ONE, 8(10), e78636. https://doi.org/10.1371/journal.pone.0078636
+Moritani, T., & deVries, H. A. (1979). Neural factors versus hypertrophy in the time course of muscle strength gain. American Journal of Physical Medicine, 58(3), 115–130.
+Progression Models in Resistance Training for Healthy Adults. (2009). Medicine & Science in Sports & Exercise, 41(3), 687–708. https://doi.org/10.1249/MSS.0b013e3181915670
+R Core Team. (2022). R: A Language and Environment for Statistical Computing.
+Rhea, M. R., Alvar, B. A., Ball, S. D., & Burkett, L. N. (2002). Three sets of weight training superior to 1 set with equal intensity for eliciting strength. Journal of Strength and Conditioning Research, 16(4), 525–529.
+Rønnestad, B. R., Egeland, W., Kvamme, N. H., Refsnes, P. E., Kadi, F., & Raastad, T. (2007). DISSIMILAR EFFECTS OF ONE- AND THREE-SET STRENGTH TRAINING ON STRENGTH AND MUSCLE MASS GAINS IN UPPER AND LOWER BODY IN UNTRAINED SUBJECTS: Journal of Strength and Conditioning Research, 21(1), 157–163. https://doi.org/10.1519/00124278-200702000-00028
+Raastad, T. (2010). Styrketrening: I teori og praksis. Gyldendal Norsk forlag.
+Starkey, D. B., Pollock, M. L., Ishida, Y., Welsch, M. A., Brechue, W. F., Graves, J. E., & Feigenbaum, M. S. (1996). Effect of resistance training volume on strength and muscle thickness: Medicine &amp Science in Sports &amp Exercise, 28(10), 1311–1320. https://doi.org/10.1097/00005768-199610000-00016
+Terzis, G., Spengos, K., Mascher, H., Georgiadis, G., Manta, P., & Blomstrand, E. (2010). The degree of p70S6k and S6 phosphorylation in human skeletal muscle in response to resistance exercise depends on the training volume. European Journal of Applied Physiology, 110(4), 835–843. https://doi.org/10.1007/s00421-010-1527-2
+Timmons, J. A. (2011). Variability in training-induced skeletal muscle adaptation. Journal of Applied Physiology, 110(3), 846–853. https://doi.org/10.1152/japplphysiol.00934.2010
+
+
