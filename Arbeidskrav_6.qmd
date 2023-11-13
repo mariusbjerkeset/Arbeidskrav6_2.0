@@ -1,5 +1,5 @@
 ---
-output: html_document
+output: pdf_document
 editor_options: 
   chunk_output_type: console
 ---
@@ -305,5 +305,3 @@ Raastad, T. (2010). Styrketrening: I teori og praksis. Gyldendal Norsk forlag.
 Starkey, D. B., Pollock, M. L., Ishida, Y., Welsch, M. A., Brechue, W. F., Graves, J. E., & Feigenbaum, M. S. (1996). Effect of resistance training volume on strength and muscle thickness: Medicine &amp Science in Sports &amp Exercise, 28(10), 1311–1320. https://doi.org/10.1097/00005768-199610000-00016
 Terzis, G., Spengos, K., Mascher, H., Georgiadis, G., Manta, P., & Blomstrand, E. (2010). The degree of p70S6k and S6 phosphorylation in human skeletal muscle in response to resistance exercise depends on the training volume. European Journal of Applied Physiology, 110(4), 835–843. https://doi.org/10.1007/s00421-010-1527-2
 Timmons, J. A. (2011). Variability in training-induced skeletal muscle adaptation. Journal of Applied Physiology, 110(3), 846–853. https://doi.org/10.1152/japplphysiol.00934.2010
-
-
