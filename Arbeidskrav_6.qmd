@@ -1,10 +1,12 @@
 ---
+title: "Arbeidskrav_6"
 output:
   pdf_document: default
   html_document: default
 editor_options: 
   chunk_output_type: console
 ---
+
 # Et moderat treningsvolum gir mer muskelhypertrofi og større økning i maksimal styrke sammenlignet med et lavt treningsvolum
 
 ## Introduksjon
